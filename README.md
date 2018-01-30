@@ -1,4 +1,6 @@
-# Brocier's adaptation of a Redux Boilerplate
+# Josh's adaptation of a Redux Boilerplate
+
+Hopefully this will help you as you need it. Please let me know if there's anything you found that I missed.
 
 Start off with create-react-app
 
@@ -12,8 +14,6 @@ After that installation you'll need to go through file by file and copy out the 
 
 I've included a setup for full CRUD to an express route in thunk.actions.js
 
-The CRUD routes won't work because I don't have the other half f the API's included in here, but I did include the userController.js that those routes are referring to, so you can see exactly what I was talking about.
+The CRUD routes won't work because I don't have the other half of the API's included in here, but I did include the userController.js that those routes are referring to, so you can see exactly what I was talking about.
 
 I've kept the example actions from Jamie's original Redux Boilerplate, but it is now showing on the SplashPage.js component.
-
-Hopefully this will help you as you need it. Please let me know if there's anything you found that I missed.
