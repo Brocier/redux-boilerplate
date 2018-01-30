@@ -10,7 +10,9 @@ Then you must:
 
 As of January 2018 you have to make sure the `react-router-redux` shows up in package.json with `^5.0.0-alpha.9` version or later.
 
-After that installation you'll need to go through file by file and copy out the pieces you need.
+After that installation you should probably branch off. `git checkout -b "redux-setup"`
+
+Then you'll need to go through file by file and copy out the pieces you need.
 
 I've included a setup for full CRUD to an express route in thunk.actions.js
 
