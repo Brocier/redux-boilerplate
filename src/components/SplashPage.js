@@ -3,9 +3,10 @@ import {connect} from 'react-redux'
 import {push} from 'react-router-redux'
 import {addPhrase} from '../actions/example.actions.js'
 
-class Home extends Component {
+class SplashPage extends Component {
   state = {
-    formValue: ''
+    formValue: '',
+    otherFormValue: ''
   }
 
   handleChange = (event) => {
@@ -33,7 +34,7 @@ class Home extends Component {
 
         {this
           .props
-          .phrases
+          .banana
           .map((phrase, i) => <p key={i}>{phrase}</p>)}
 
         <button type='button' onClick={() => this.props.push('/users')}>
@@ -45,7 +46,7 @@ class Home extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return {phrases: state.example}
+  return {banana: state.example}
 }
 
-export default connect(mapStateToProps, {push, addPhrase})(Home)
+export default connect(mapStateToProps, {push, addPhrase})(SplashPage)
