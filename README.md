@@ -1,4 +1,4 @@
-# Josh's adaptation of a Redux Boilerplate
+# Josh's adaptation of a Redux - Express Boilerplate
 
 Hopefully this will help you as you need it. Please let me know if there's anything you found that I missed.
 
