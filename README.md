@@ -2,19 +2,27 @@
 
 Hopefully this will help you as you need it. Please let me know if there's anything you found that I missed.
 
-Start off with create-react-app
-
-Then you must:
+`create-react-app client && cd "$_"`
 
 `npm i axios history react react-dom react-redux react-scripts redux redux-devtools-extension redux-logger redux-thunk react-router-redux@next`
 
-As of January 2018 you have to make sure the `react-router-redux` shows up in package.json with `^5.0.0-alpha.9` version or later.
+`cd src`
 
-After that installation you should probably branch off. `git checkout -b "redux-setup"`
+`rm logo.svg index.css App.css`
+
+`mv App.js Root.js`
+
+`mkdir components reducers actions tests`
+
+`mv App.test.js tests`
+
+
+
+As of January 2018 you have to make sure the `react-router-redux` shows up in package.json with `^5.0.0-alpha.9` version or later.
 
 Then you'll need to go through file by file and copy out the pieces you need.
 
-I've included a setup for full CRUD to an express route in thunk.actions.js
+I've included a setup for full CRUD to an API route in thunk.actions.js
 
 The CRUD routes won't work because I don't have the other half of the API's included in here, but I did include the userController.js that those routes are referring to, so you can see exactly what I was talking about.
 
