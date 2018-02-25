@@ -5,7 +5,7 @@ import {ConnectedRouter} from 'react-router-redux'
 import createHistory from 'history/createBrowserHistory'
 import configureStore from './configureStore'
 import SplashPage from './components/SplashPage.js'
-import UserPage from './components/UserPage.js'
+import UserPage from './components/users/UserPage.js'
 
 const history = createHistory()
 const store = configureStore(history)

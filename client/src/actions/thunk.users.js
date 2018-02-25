@@ -14,6 +14,20 @@ export function getUserRoute() {
   }
 }
 
+export function sendOneUserToState(userFromDatabase) {
+  return {type: 'GET_ONE_USER', userFromDatabase}
+}
+
+export function getOneUserRoute(userId) {
+  return function (dispatch) {
+    return axios
+      .get(`/api/users/${userId}`)
+      .then((response) => {
+        dispatch(sendOneUserToState(response.data))
+      })
+  }
+}
+
 export function sendNewUserToState(newUserData) {
   return {type: 'CREATE_USER', newUserData}
 }

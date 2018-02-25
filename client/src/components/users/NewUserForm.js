@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {sendNewUserToDatabase} from '../actions/thunk.actions.js'
+import {sendNewUserToDatabase} from '../../actions/thunk.users.js'
 
 class UserForm extends Component {
   state = {

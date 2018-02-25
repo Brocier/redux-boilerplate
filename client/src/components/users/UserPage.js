@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {push} from 'react-router-redux'
-import {getUserRoute, deleteUserFromDatabase} from '../actions/thunk.actions.js'
+import {getUserRoute, deleteUserFromDatabase} from '../../actions/thunk.users.js'
 import EditUserForm from './EditUserForm.js'
 import NewUserForm from './NewUserForm.js'
 

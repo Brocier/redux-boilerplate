@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import {editUserInDatabase} from '../actions/thunk.actions.js'
+import {editUserInDatabase} from '../../actions/thunk.users.js'
 
 class EditUserForm extends Component {
 
