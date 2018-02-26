@@ -86,8 +86,6 @@ return store
 
 That last segment inserts the standard boilerplate store configuration. I haven't had to change it yet.
 
-Next go into `index.js` and change out `App` to `Root`.
-
 As of January 2018 you have to make sure the `react-router-redux` shows up in package.json with `^5.0.0-alpha.9` version or later.
 
 Then you'll need to go through file by file and copy out the pieces you need.
